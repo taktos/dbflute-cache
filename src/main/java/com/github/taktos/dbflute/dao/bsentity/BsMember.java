@@ -10,6 +10,7 @@ import org.seasar.dbflute.dbmeta.DBMeta;
 import org.seasar.dbflute.Entity;
 import com.github.taktos.dbflute.dao.allcommon.DBMetaInstanceHandler;
 import com.github.taktos.dbflute.dao.exentity.*;
+import com.github.taktos.dbflute.cache.*;
 
 /**
  * The entity of MEMBER as TABLE. <br />
@@ -145,6 +146,9 @@ public abstract class BsMember implements Entity, Serializable, Cloneable {
      * @return The entity of foreign property 'memberStatus'. (NullAllowed: If the foreign key does not have 'NotNull' constraint, please check null.)
      */
     public MemberStatus getMemberStatus() {
+        if (_memberStatus == null) {
+            _memberStatus = MemberStatusCache.get(getMemberStatusCode());
+        }
         return _memberStatus;
     }
 

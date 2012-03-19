@@ -8,7 +8,7 @@
         <column autoIncrement="true"
             comment="会員ID: 会員を識別するID。連番として自動採番される。&#xa;（会員IDだけに限らず）採番方法はDBMS次第。"
             dbType="INTEGER"
-            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_8AE831E4_BF03_4BE3_928C_08D4027D6726"
+            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_6EE6D6B4_F97F_4574_8859_2CF7692C7E20"
             javaType="Integer" name="MEMBER_ID" pkName="CONSTRAINT_8"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column
@@ -124,7 +124,7 @@
         name="MEMBER_LOGIN" schema="EXAMPLEDB.PUBLIC" type="TABLE">
         <column autoIncrement="true" comment="会員ログインID: "
             dbType="BIGINT"
-            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_C22D89DA_6998_4F99_8DDC_A94DCBAE5CAA"
+            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_70DB848F_0565_46AC_8005_344992865970"
             javaType="Long" name="MEMBER_LOGIN_ID"
             pkName="CONSTRAINT_BD" primaryKey="true" required="true"
             size="19" type="BIGINT"/>
@@ -310,7 +310,7 @@
     </table>
     <table comment="商品: " name="PRODUCT" schema="EXAMPLEDB.PUBLIC" type="TABLE">
         <column autoIncrement="true" comment="" dbType="INTEGER"
-            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_66F0843C_E78E_450C_9CFB_0973465CC7DB"
+            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_0493588E_CEE0_44C0_AB5A_E4A6B714FB39"
             javaType="Integer" name="PRODUCT_ID" pkName="CONSTRAINT_1"
             primaryKey="true" required="true" size="10" type="INTEGER"/>
         <column
@@ -391,7 +391,7 @@
         comment="購入: 一つの商品に対する購入を表現する。&#xa;実業務であれば購入詳細というテーブルを作り、「購入という行為」と「その中身（詳細）」を違う粒度のデータとしてそれぞれ管理するのが一般的と言えるでしょう。というか、注文とか請求とかそういうことを考え始めたらもっと複雑になるはずですが、ExampleDBということで割り切っています。"
         name="PURCHASE" schema="EXAMPLEDB.PUBLIC" type="TABLE">
         <column autoIncrement="true" comment="" dbType="BIGINT"
-            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_85900A94_6C91_44B1_9FE2_E1D47374B490"
+            default="NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_CCBA616E_B302_404F_A59F_74CDDEF21F47"
             javaType="Long" name="PURCHASE_ID" pkName="CONSTRAINT_9"
             primaryKey="true" required="true" size="19" type="BIGINT"/>
         <column
