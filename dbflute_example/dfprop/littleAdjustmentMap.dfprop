@@ -324,13 +324,12 @@ map:{
     # o relationalNullObjectMap: (NotRequired - Default map:{})
     #  You can get a null object when the relation is null.
     #
-    #; relationalNullObjectMap = map:{
-    #    ; providerPackage = $$packageBase$$.nogen.cache
-    #    ; foreignMap = map:{
-    #        ; MEMBER_STATUS = CachedMemberStatus.get($$PrimaryKey$$)
-    #        ; MEMBER_SECURITY = CachedMemberSecurity.get($$PrimaryKey$$)
-    #    }
-    #}
+    ; relationalNullObjectMap = map:{
+        ; providerPackage = com.github.taktos.dbflute.cache
+        ; foreignMap = map:{
+            ; MEMBER_STATUS = MemberStatusCache.get($$PrimaryKey$$)
+        }
+    }
     # - - - - - - - - - -/
 }
 # ----------------/
