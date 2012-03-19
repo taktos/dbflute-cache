@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR2.1//DTD S2Container//EN"
+    "http://www.seasar.org/dtd/components21.dtd">
+
+<components namespace="dbflute">
+    <include path="j2ee.dicon"/>
+
+    <!-- The components of DBFlute Runtime. -->
+    <component name="introduction" class="com.github.taktos.dbflute.dao.allcommon.DBFluteInitializer"/>
+    <component name="invokerAssistant" class="com.github.taktos.dbflute.dao.allcommon.ImplementedInvokerAssistant"/>
+    <component name="commonColumnAutoSetupper" class="com.github.taktos.dbflute.dao.allcommon.ImplementedCommonColumnAutoSetupper"/>
+    <component name="behaviorSelector" class="com.github.taktos.dbflute.dao.allcommon.ImplementedBehaviorSelector"/>
+    <component name="behaviorCommandInvoker" class="org.seasar.dbflute.bhv.core.BehaviorCommandInvoker"/>
+
+    <!-- The components of Behavior. -->
+    <component name="memberBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberBhv"/>
+    <component name="memberAddressBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberAddressBhv"/>
+    <component name="memberLoginBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberLoginBhv"/>
+    <component name="memberSecurityBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberSecurityBhv"/>
+    <component name="memberServiceBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberServiceBhv"/>
+    <component name="memberStatusBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberStatusBhv"/>
+    <component name="memberWithdrawalBhv" class="com.github.taktos.dbflute.dao.exbhv.MemberWithdrawalBhv"/>
+    <component name="productBhv" class="com.github.taktos.dbflute.dao.exbhv.ProductBhv"/>
+    <component name="productCategoryBhv" class="com.github.taktos.dbflute.dao.exbhv.ProductCategoryBhv"/>
+    <component name="productStatusBhv" class="com.github.taktos.dbflute.dao.exbhv.ProductStatusBhv"/>
+    <component name="purchaseBhv" class="com.github.taktos.dbflute.dao.exbhv.PurchaseBhv"/>
+    <component name="regionBhv" class="com.github.taktos.dbflute.dao.exbhv.RegionBhv"/>
+    <component name="serviceRankBhv" class="com.github.taktos.dbflute.dao.exbhv.ServiceRankBhv"/>
+    <component name="vendorDollarBhv" class="com.github.taktos.dbflute.dao.exbhv.Vendor$DollarBhv"/>
+    <component name="vendorCheckBhv" class="com.github.taktos.dbflute.dao.exbhv.VendorCheckBhv"/>
+    <component name="withdrawalReasonBhv" class="com.github.taktos.dbflute.dao.exbhv.WithdrawalReasonBhv"/>
+    <component name="summaryProductBhv" class="com.github.taktos.dbflute.dao.exbhv.SummaryProductBhv"/>
+    <component name="summaryWithdrawalBhv" class="com.github.taktos.dbflute.dao.exbhv.SummaryWithdrawalBhv"/>
+</components>
